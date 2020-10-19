@@ -1,0 +1,121 @@
+export default () => `
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>J/D Fit!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i|Montserrat&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <header>
+
+    <div class="nav-bar">
+
+      <p class="logo">J/D Fit!</p>
+
+      <nav>
+        <ul>
+          <li><a href="#">Why Start</a></li>
+          <li><a href="#">Getting Motivated</a></li>
+          <li><a href="#">Let Us Help You Along The Way!</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    </header>
+
+
+  <div id="form">
+
+    <h2>Let Us Help You Along the Way!</h2>
+
+    <form method="get">
+    <fieldset>
+      <legend>
+        Your Details:
+      </legend>
+      <label>
+        Name:
+        <input type="name" name="name" size="30" maxlength="100">
+      </label>
+
+      <br />
+
+      <label>
+        Email:
+        <input type="email" name="email" size="30" maxlength="100">
+      </label>
+
+      <br />
+
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>
+          Your Review:
+        </legend>
+        <p>
+          <label for="hear-about">
+            How did you hear about us?
+          </label>
+          <select name="referrer" id="hear-about">
+            <option value="google">Google</option>
+            <option value="friend">Friend</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        <p>
+          Would you visit again?
+          <br />
+          <label>
+            <input type="radio" name="rating" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="rating" value="no" />
+            No
+          </label>
+          <label>
+            <input type="radio" name="rating" value="maybe" />
+            Maybe
+          </label>
+        </p>
+        <p>
+        <label for="comments">
+          Comments:
+        </label>
+
+        <br />
+
+        <textarea rows="4" cols="40" id="comments">
+        </textarea>
+        </p>
+        <label>
+          <input type="checkbox" name="subscribe" checked="checked" />
+          Sign me up for email updates
+        </label>
+
+        <br />
+
+        <input type="submit" value="Submit review" />
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
+`;
