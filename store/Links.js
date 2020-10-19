@@ -4,5 +4,5 @@ export default [
   { title: "Healthy", text: "Healthy" },
   { title: "Form", text: "Form" },
   { title: "Starting", text: "Starting" },
-  { title: "Calculator", title: "Calculator" }
+  { title: "Calculator", text: "Calculator" }
 ];

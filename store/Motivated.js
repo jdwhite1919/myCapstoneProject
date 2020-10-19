@@ -1,4 +1,4 @@
 export default {
   header: "Motivated",
-  view: "Motivated"
+  page: "Motivated"
 };

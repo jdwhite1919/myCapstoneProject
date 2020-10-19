@@ -1,4 +1,4 @@
 export default {
   header: "Calculator",
-  view: "Calculator"
+  page: "Calculator"
 };

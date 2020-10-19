@@ -1,10 +1,7 @@
+import * as state from "./store";
+import { Header, Nav, Main, Footer } from "./components";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
-// importing all as a Module object
-import * as state from "./store";
-// importing all by name
-import { Header, Nav, Main, Footer } from "./components";
-// add menu toggle to bars icon in nav bar
 import axios from "axios";
 import "./env";
 
