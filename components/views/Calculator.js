@@ -1,3 +1,3 @@
-export default st => `
-
+export default () => `
+<p>hello</p>
 `;

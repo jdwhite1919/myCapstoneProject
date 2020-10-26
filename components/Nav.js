@@ -1,11 +1,18 @@
 export default links => `
-<nav>
-  <i class="fas fa-bars"></i>
-  <ul class="hidden--mobile nav-links">
-  ${links
-    .map(
-      link => `<li><a href="/${link.title}" data-navigo>${link.text}</a></li>`
-    )
-    .join("")}
-  </ul>
-</nav>`;
+<header>
+<div class="nav-bar">
+
+    <p class="logo">J/D Fit!</p>
+
+    <nav>
+      <ul>
+        <li><a href="#">Why Start</a></li>
+        <li><a href="#">Getting Motivated</a></li>
+        <li><a href="components/views/Calculator.js">Tools to Succeed</a></li>
+        <li><a href="#">Staying Healthy</a></li>
+        <li><a href="#">Let Us Help!</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;
