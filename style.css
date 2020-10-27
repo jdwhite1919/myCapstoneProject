@@ -10,6 +10,25 @@ header {
   width: 100%;
 }
 
+.introduction-box {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.battleropes {
+  width: 400px;
+  height: 300px;
+}
+
+.introduction-text {
+  float: right;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
 header::after {
   content: '';
   display: table;
@@ -18,11 +37,9 @@ header::after {
 
 h1 {
   text-align: center;
-}
-
-.homePageText {
-  width: 50%;
-  float: right;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Comic Sans MS';
 }
 
 .nav-bar {
@@ -63,8 +80,6 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 11px;
-  display: flex;
-  justify-content: flex-end;
 }
 
 nav a:hover {
