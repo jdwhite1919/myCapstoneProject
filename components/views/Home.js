@@ -13,4 +13,9 @@ export default () => `
 <br />
 
 <h1>Pack Fitness: What We Do</h1>
+<div class="introduction-box-two">
+<div class="introduction-text-two">
+<p>Whether you're a beginner, intermediate, advanced, an olympian, never seen a weight before, or anything between, we're here for you. Wanna stay home and get fit? We got you. Feel brave enough to head back to the gym? We got you. Unsure of the best choice for you? We got you. Come with questions about fitness and diet. Seeking minor advice or need a complete workout regime? We got you. Come one, come all. Here, we are a <b>Pack</b>. Welcome to <b>Pack Fitness</b>.</p>
+</div>
+</div>
 `;

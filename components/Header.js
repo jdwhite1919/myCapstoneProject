@@ -8,7 +8,7 @@ export default st => `
       <ul>
         <li><a href="#">Why Start</a></li>
         <li><a href="#">Getting Motivated</a></li>
-        <li><a href="/Calculator.js" data-navigo>Tools to Succeed</a></li>
+        <li><a href="#">Tools to Succeed</a></li>
         <li><a href="#">Staying Healthy</a></li>
         <li><a href="#">Let Us Help!</a></li>
       </ul>
