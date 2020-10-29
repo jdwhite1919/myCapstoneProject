@@ -1,7 +1,7 @@
 export default () => `
   <div id="form">
 
-    <h2>Let Us Help You Along the Way!</h2>
+    <h1>Let Us Help You Along the Way!</h1>
 
     <form method="get">
     <fieldset>

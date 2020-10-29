@@ -1,8 +1,8 @@
 export default [
   { title: "Home", text: "Home" },
-  { title: "Motivated", text: "Motivated" },
-  { title: "Healthy", text: "Healthy" },
-  { title: "Form", text: "Form" },
-  { title: "Starting", text: "Starting" },
-  { title: "Calculator", text: "Calculator" }
+  { title: "Starting", text: "Getting Started" },
+  { title: "Motivated", text: "Finding Motivation" },
+  { title: "Calculator", text: "Tools for Success" },
+  { title: "Healthy", text: " Staying Healthy" },
+  { title: "Form", text: "Let Us Help!" }
 ];
