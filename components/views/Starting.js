@@ -3,8 +3,10 @@ export default () => `
 
 <h2 id="hitting-weights">Hitting Weights</h2>
 
-<img class="weights-image" src="weights.jpeg"/>
+<div class="weights-box">
+<img class="weights-image" src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/weights.jpeg?raw=true"/>
 
+<div class="weights-text">
 <p>
 "Lightweight, baby!!" "Get it!!" Screams Echos Through the Gym*
 <br>
@@ -29,11 +31,15 @@ Weight-bearing fitness is crucial to health, and beneficial in fighting common c
 <a href="https://www.dummies.com/health/exercise/weights/weight-lifting-safety-tips/">Safety Guide to Weights</a>
 </p>
 </p>
+</div>
+</div>
 
 <h2 id="hitting-cardio">Hitting Cardio</h2>
 
-<img class="cardio-image" src="cardio.jpeg"/>
+<div class="cardio-box">
+<img class="cardio-image" src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/cardio.jpeg?raw=true"/>
 
+<div class="cardio-text">
 <p>
 Aww, the dreaded cardiovascular exercise. Something almost universally hated yet something almost universally used. People think cardio is the life force of fitness, like oxygen is to the body. Many people it burns fat and gives us that athletic look so deeply coveted by many. Well, not exactly.
 <br>
@@ -49,15 +55,20 @@ Don't get me wrong, cardio will still improve such aspects as:
 <p>
 There are a few things to be aware of with cardio. Remember there are three different types of bpm categories that define how intense a cardio-workout session is; check with your doctor to see if you are safe for all three of them. Additionally, many HIIT workouts (high-intensity interval training) are high impact workouts that are hard on the joints; check to see if you are able to handle these high impact workouts and practice them first in a slower manner to practice form (like you would with weights). Cardio workouts are great, just know how to use it to your best benefit to reach your own goals.
 <br>
+<br>
 Here is a link to help you calculate your max bpm for cardio workouts.
 <br>
 <a href="https://www.active.com/fitness/calculators/heartrate">BPM Calculator</a>
 </p>
 </p>
+</div>
+</div>
 
 <h2 id="both">So Which One Is For Me?</h2>
+<div class="weights-cardio-text">
 <p>
 Alright, so you got yourself off the couch and you are at the gym. Which one should you do? The weights look intimidating and the cardio equipment looks just plain boring.
+<br>
 <br>
 Of course, the most optimal answer is for you do both, focusing on one and using the other as a tool in your arsenal. Here is how you should break it down if you decide to do both.
 </p>
@@ -86,10 +97,8 @@ Most people find themselves in the goals that correlate to hitting the weights f
 <p>
 Basically, if you are training for a race or another type of endurance event, than hitting cardio first is the way to go. Also, with overall weight loss, remember you might see results sooner, but since you run the risk of burning muscle, the results may not stick as long if you fall off the loop.
 </p>
-
-<br>
-
 <p>
 The choice is yours. Think about your goals and execute your own personal plan based on it; your goals are your goals, and they can be as similar or as different to others' as you want them to be. Fitness is as individual as it is social, and no one can tell you what is right for you!
 </p>
+</div>
 `;

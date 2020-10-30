@@ -1,4 +1,5 @@
 export default () => `
+<h1>Track Your Progress</h1>
 <div class="calculator-grid">
     <div class="output">
       <div data-previous-operand class="previous-operand"></div>
