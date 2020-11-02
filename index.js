@@ -4,6 +4,7 @@ import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 import "./env";
+// import cors from "cors";
 
 const router = new Navigo(window.location.origin);
 
