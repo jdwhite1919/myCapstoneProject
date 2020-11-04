@@ -283,3 +283,20 @@ form {
   font-family: Helvetica, sans-serif;
   font-style: italic;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.first-video {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  line-height: 1.5;
+}

@@ -3,7 +3,7 @@ export default () => `
 
     <h1>Let Us Help You Along the Way!</h1>
 
-    <form method="get">
+    <form action="https://formspree.io/f/mvovrwzz" method="get">
     <fieldset>
       <legend>
         Your Details:
@@ -74,7 +74,7 @@ export default () => `
 
         <br />
 
-        <input type="submit" value="Submit review" />
+        <input type="submit" value="Let's Do This!" />
       </fieldset>
     </form>
   </div>

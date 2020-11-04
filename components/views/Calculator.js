@@ -24,4 +24,5 @@ export default () => `
     <button data-number>0</button>
     <button data-equals class="span-two">=</button>
   </div>
+  <script src="C:/Users/User/code/SavvyCoders/myCapstoneProject/index.js"></script>
 `;
