@@ -24,5 +24,10 @@ export default () => `
     <button data-number>0</button>
     <button data-equals class="span-two">=</button>
   </div>
-  <script src="C:/Users/User/code/SavvyCoders/myCapstoneProject/index.js"></script>
+
+  <h1>A Numbers Game</h1>
+  <div class="numbers-game">
+  <p>Visible fitness results are a numbers game. Tracking calories and macronutrients, measuring heart rates, counting steps, adding miles, calculating new rep maxes; all these have to do with noticing results, whether done consciously or subconsciously. There's a science behind it; and this is where we come in. We'll give you the tool and resources to succeed. No need to invent the wheel, right? We'll start with the tools necessary to keep you safe while you start your fitness journey.</p>
+  </div>
+
 `;

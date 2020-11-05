@@ -28,7 +28,6 @@ Lifting weights is for women, men, adolescents, geriatrics, pediatrics, you name
 <p>
 Weight-bearing fitness is crucial to health, and beneficial in fighting common chronic conditions such as cardiovascular disease (the number one killer of Americans), osteoporosis, arthritis, diabetes, just to name a few. Ready to improve your quality of life? Hit the weights.
 <br>
-<a href="https://www.dummies.com/health/exercise/weights/weight-lifting-safety-tips/">Safety Guide to Weights</a>
 </p>
 </p>
 </div>

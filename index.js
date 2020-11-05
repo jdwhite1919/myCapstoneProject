@@ -52,12 +52,19 @@ function addPicOnFormSubmit(st) {
 
 function addNavEventListeners() {
   // add menu toggle to bars icon in nav bar
-  document
-    .querySelector(".fa-bars")
-    .addEventListener("click", () =>
-      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
-    );
+  document.addEventListener("click", () =>
+    document.querySelector("nav > ul").classList.toggle("hidden--mobile")
+  );
 }
+
+axios
+  .request(options)
+  .then(function(response) {
+    console.log(response.data);
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 
 // get data from an API endpoint
 axios
@@ -225,3 +232,5 @@ deleteButton.addEventListener("click", button => {
   calculator.delete();
   calculator.updateDisplay();
 });
+
+// let github = process.env.GITHUB_TOKEN;

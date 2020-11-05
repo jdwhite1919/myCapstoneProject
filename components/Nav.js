@@ -3,7 +3,6 @@ export default links => `
 <div class="nav-bar">
 <p class="logo">Pack Fitness</p>
 <nav>
-<i class="fas fa-bars"></i>
 <ul>
 ${links.reduce(
   (html, link) =>

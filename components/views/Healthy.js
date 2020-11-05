@@ -18,4 +18,11 @@ export default () => `
   <div class="safe-gyms-article">
   <a href="https://www.npr.org/sections/health-shots/2020/07/05/884927215/my-gym-is-reopening-is-it-safe-to-work-out-there">Making Gyms Safer: Why the Virus Is Less Likely to Spread There Than in a Bar</a>
   </div>
+
+  <hr />
+
+  <h3>Ready For the Weights? Safety Tips Before You Start</h3>
+  <div class="safe-gyms-article">
+  <a href="https://www.dummies.com/health/exercise/weights/weight-lifting-safety-tips/">Safety Guide to Weights</a>
+  </div>
 `;
