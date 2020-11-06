@@ -54,10 +54,6 @@ Don't get me wrong, cardio will still improve such aspects as:
 <p>
 There are a few things to be aware of with cardio. Remember there are three different types of bpm categories that define how intense a cardio-workout session is; check with your doctor to see if you are safe for all three of them. Additionally, many HIIT workouts (high-intensity interval training) are high impact workouts that are hard on the joints; check to see if you are able to handle these high impact workouts and practice them first in a slower manner to practice form (like you would with weights). Cardio workouts are great, just know how to use it to your best benefit to reach your own goals.
 <br>
-<br>
-Here is a link to help you calculate your max bpm for cardio workouts.
-<br>
-<a href="https://www.active.com/fitness/calculators/heartrate">BPM Calculator</a>
 </p>
 </p>
 </div>

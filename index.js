@@ -57,15 +57,6 @@ function addNavEventListeners() {
   );
 }
 
-axios
-  .request(options)
-  .then(function(response) {
-    console.log(response.data);
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
-
 // get data from an API endpoint
 axios
   .get("https://jsonplaceholder.typicode.com/posts")
@@ -82,11 +73,14 @@ axios
     }
   });
 
-axios.get(/* your API endpoint from above */).then(response => {
-  state.Home.weather.city = response.name;
-  state.Home.weather.temp = response.main.temp;
-  state.Home.weather.description = response.weather.main;
-});
+axios
+  .get()
+  .then(response => {
+    state.Home.weather.city = response.name;
+    state.Home.weather.temp = response.main.temp;
+    state.Home.weather.description = response.weather.main;
+  })
+  .catch(err => console.log(err));
 
 axios
   .get(`https://api.github.com/users/${jdwhite1919}/repos`, {

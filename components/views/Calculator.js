@@ -30,4 +30,14 @@ export default () => `
   <p>Visible fitness results are a numbers game. Tracking calories and macronutrients, measuring heart rates, counting steps, adding miles, calculating new rep maxes; all these have to do with noticing results, whether done consciously or subconsciously. There's a science behind it; and this is where we come in. We'll give you the tool and resources to succeed. No need to invent the wheel, right? We'll start with the tools necessary to keep you safe while you start your fitness journey.</p>
   </div>
 
+<div class="introduction-box">
+<img src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/heart-rate-zones-1024x650.png?raw=true" alt="heartrate" title="heartrate" class="heartrate" />
+<div class="introduction-text">
+<p>Regardless of your workout dynamic, paying close attention to heart rate is always important. As we get older, we need to pay attention to our thresholds with our hear rate to determine what zones of training our safe and healthy to us. However, our estimate should be based on what kind of training we're performing; i.e., what zone level we're trying to maintain during a workout session.</p>
+<br />
+<p>To the left is a chart illustrating the different training zones I was referring. The different zones refer to different levels of training. For example, threshold zone can be High Intensity Interval Training, Aerobic can be swimming, endurance jogging, and recovery walking. How we calculate our heart rate is a percentage of our maximum heart rate. Click the link below to find yours!</p>
+<a href="https://www.active.com/fitness/calculators/heartrate">BPM Calculator</a>
+</div>
+</div>
+
 `;
