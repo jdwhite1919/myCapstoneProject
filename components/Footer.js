@@ -1,5 +1,6 @@
 export default () => `
 <footer>
-&Pack Fitness; 2020 <a href="https://savvycoders.com/">Savvy Coders</a>
+<p>&Pack Fitness; 2020 <a href="https://savvycoders.com/">Savvy Coders</a></p>
+<p><a href="#top">Top</a></p>
 </footer>
 `;

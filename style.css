@@ -570,9 +570,11 @@ textarea.input {
 footer {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
   width: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 .first-video {
@@ -618,15 +620,14 @@ footer {
 }
 
 .meetteam {
-  background: #81c644;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background-color: hsla(325, 50%, 50%, 0.2);
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .wrapper{
   margin-top: 10%;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
 .wrapper h1{
@@ -645,24 +646,25 @@ footer {
 }
 
 .team .team_member{
-  background: #fff;
+  background: hsla(330, 17%, 91%, 0.5);
   margin: 5px;
   margin-bottom: 50px;
   width: 300px;
   padding: 20px;
   line-height: 20px;
-  color: #8e8b8b;
+  color: #080808;
   position: relative;
 }
 
 .team .team_member h3{
-  color: #81c644;
+  color: #0a0806;
   font-size: 26px;
   margin-top: 50px;
+  font-family: Garamond, sans-serif;
 }
 
 .team .team_member p.role{
-  color: #ccc;
+  color: #fff;
   margin: 12px 0;
   font-size: 12px;
   text-transform: uppercase;
@@ -684,3 +686,10 @@ footer {
   height: 100px;
   padding: 5px;
 }
+
+.aboutjd {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
