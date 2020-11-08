@@ -30,7 +30,7 @@ export default () => `
   <h1>Our Team</h1>
   <div class="team">
   <div class="team_member">
-      <img src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/aboutjd.jpg?raw=true" alt="aboutjd" title="aboutjd" class="aboutjd" />
+      <img src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/jdgym.JPG?raw=true" alt="aboutjd" title="aboutjd" class="aboutjd" />
     </div>
     <div class="team_member">
       <div class="team_img">
@@ -48,7 +48,7 @@ export default () => `
       <p class="role">Co-Founder, Trainer</p>
       <p>Dylan is a graduate of Southern Illinois University-Edwardsville, where he majored in Exercise Science. He currently manages a gym and has built strong relationships with his members.</p></div>
       <div class="team_member">
-      <img src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/aboutjd.jpg?raw=true" alt="aboutjd" title="aboutjd" class="aboutjd" />
+      <img src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/dylangym.JPG?raw=true" alt="aboutjd" title="aboutjd" class="aboutjd" />
     </div>
   </div>
 </div>

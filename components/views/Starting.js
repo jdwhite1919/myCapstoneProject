@@ -1,7 +1,7 @@
 export default () => `
-<h1>Weights or Cardio or Both, oh My!</h1>
+<h1>Getting Started With the Basics</h1>
 
-<h2 id="hitting-weights">Hitting Weights</h2>
+<h2 id="hitting-weights">Hitting the Weights</h2>
 
 <div class="weights-box">
 <img class="weights-image" src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/weights.jpeg?raw=true"/>
@@ -33,7 +33,7 @@ Weight-bearing fitness is crucial to health, and beneficial in fighting common c
 </div>
 </div>
 
-<h2 id="hitting-cardio">Hitting Cardio</h2>
+<h2 id="hitting-cardio">Not Cardi-B, but Cardi-O</h2>
 
 <div class="cardio-box">
 <img class="cardio-image" src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/cardio.jpeg?raw=true"/>
@@ -64,10 +64,14 @@ There are a few things to be aware of with cardio. Remember there are three diff
 <p>
 Alright, so you got yourself off the couch and you are at the gym. Which one should you do? The weights look intimidating and the cardio equipment looks just plain boring.
 <br>
-<br>
 Of course, the most optimal answer is for you do both, focusing on one and using the other as a tool in your arsenal. Here is how you should break it down if you decide to do both.
 </p>
-<h4>Weights First</h4>
+<div class="first-weights">
+<ul>
+  <li><h4>Weights First</h4></li>
+  <i class="fas fa-dumbbell" style="font-size: 3.0rem;"></i>
+</ul>
+</div>
 <p>
 Weights come first at the gym if these are your goals.
 </p>
@@ -80,7 +84,12 @@ Weights come first at the gym if these are your goals.
   <p>
   While most think the infamous "athletic" looks comes from cardio, weights are actually the way to go. In order to target fat loss specifically, glycogen stores in the body need to be burned while weighlifting, so by the time cardio rolls around in the workout, you can optimize the "fat-burning zone" and use triglycerides as energy. Now remember, you cannot turn fat in to muscle, but building muscle also helps burn fat while sitting at home on the couch.
   </p>
-<h4>Cardio First</h4>
+<div class="cardio-first">
+<ul>
+  <li><h4>Cardio First</h4></li>
+  <i class="fas fa-heartbeat" style="font-size: 3.0rem;"></i>
+</ul>
+</div>
 <p>
 Most people find themselves in the goals that correlate to hitting the weights first in a workout, but a few circumstances can dictate when to hit cardio first.
 </p>
