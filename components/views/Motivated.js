@@ -20,4 +20,20 @@ src="https://www.youtube.com/embed/u_ktRTWMX3M">
 
   <blockquote>"Trust Yourself, Break Some Rules, Don't Be Afraid To Fail, Ignore The Naysayers, Work Like Hell, Give Something Back" - Arnold Schwarzenegger</blockquote>
   </div>
+
+  <div class="third-video">
+    <iframe width="672" height="504"
+src="https://www.youtube.com/embed/tj7utbR4rMc">
+</iframe>
+
+  <blockquote>"I was willing to be my own rescue at the risk of your approval. Most of us aren't like that." - Lisa Nichols</blockquote>
+  </div>
+
+  <h2>Quotes of the Week</h2>
+
+  <div class="weekly-quotes">
+  <blockquote>"Life is like riding a bicycle To keep your balance you must keep moving." - Albert Einstein</blockquote>
+  <blockquote>"I've grown most not from victories, but setbacks. If winning is God's reward, then losing is how he teaches us." - Serena Williams</blockquote>
+  <blockquote>"I don't want to be the next Michael Jordan, I only want to be Kobe Bryant." - Kobe Bryant</blockquote>
+  </div>
 `;

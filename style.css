@@ -71,6 +71,7 @@ h1 {
 }
 
 h2 {
+  color: #e95907;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -709,3 +710,75 @@ footer {
   margin-right: 20px;
 }
 
+.strength-log {
+  width: 325px;
+  height: 235px;
+  margin-top: 20px;
+}
+
+.strength-box {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.strength-text {
+  float: right;
+  margin-left: 30px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 120%;
+  font-style: italic;
+}
+
+.weather-box {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.details li {
+  color: #1abc9c;
+  font-size: 1.5rem;
+}
+
+.weather-box-text{
+  font-size: 1.5rem;
+  float: right;
+  margin-left: 30px;
+  padding-left: 30px;
+  width: 50%;
+}
+
+.third-video {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  line-height: 1.5;
+  margin-top: 70px;
+}
+
+.weekly-quotes {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.weekly-quotes blockquote {
+  display: left !important;
+  width: 100% !important;
+  font-size: 130%;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+  border-top: none !important;
+  border-bottom: none !important;
+}

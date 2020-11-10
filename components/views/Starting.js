@@ -8,9 +8,7 @@ export default () => `
 
 <div class="weights-text">
 <p>
-"Lightweight, baby!!" "Get it!!" Screams Echos Through the Gym*
-<br>
-Things absolutely necessary to say when lifting since lifting weights is only for lunks, right??
+Lifting weights is only for lunks, right??
 <br>
 WRONG!!
 <br>
@@ -84,6 +82,12 @@ Weights come first at the gym if these are your goals.
   <p>
   While most think the infamous "athletic" looks comes from cardio, weights are actually the way to go. In order to target fat loss specifically, glycogen stores in the body need to be burned while weighlifting, so by the time cardio rolls around in the workout, you can optimize the "fat-burning zone" and use triglycerides as energy. Now remember, you cannot turn fat in to muscle, but building muscle also helps burn fat while sitting at home on the couch.
   </p>
+  <div class="strength-box">
+<img src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/strength-training-log.png?raw=true" alt="strength-log" title="strength-log" class="strength-log" />
+<div class="strength-text">
+<p>Here is a form to help you get started tracking your progress! Open in a new tab and print it out!</p>
+</div>
+</div>
 <div class="cardio-first">
 <ul>
   <li><h4>Cardio First</h4></li>

@@ -6,6 +6,50 @@ import axios from "axios";
 import "./env";
 // import cors from "cors";
 
+// API Start Here
+
+const apiData = {
+  url:
+    "https://api.openweathermap.org/data/2.5/weather?q=st%20louis,us&units=imperials&appid=",
+  key: "b00488066ee9a60f4eb190e8651fea2b"
+};
+
+const { url, key } = apiData;
+const apiUrl = `${url}${key}`;
+
+fetch(apiUrl)
+  .then(data => {
+    if (data.ok) {
+      return data.json();
+    }
+    throw new Error("Response not ok.");
+  })
+  .then(weather => generateHtml(weather))
+  .catch(error => console.error("Error:", error));
+
+const generateHtml = data => {
+  console.log(data);
+  const html = `
+  <div class="details">
+  <ul>
+    <li>City: ${data.name}</li>
+    <li><span>Sky: ${data.weather[0].main}</span></li>
+    <li><span>Wind Speed: ${data.wind.speed}</span></li>
+    <li><span>Temp: ${Math.floor(
+      (data.main.temp - 273.15) * (9 / 5) + 32
+    )}</span></li>
+    <li><span>Feels Like: ${Math.floor(
+      (data.main.feels_like - 273.15) * (9 / 5) + 32
+    )}</span></li>
+    </ul>
+  </div>
+  `;
+  const weatherDiv = document.querySelector(".weather");
+  weatherDiv.innerHTML = html;
+};
+
+// API End Here
+
 const router = new Navigo(window.location.origin);
 
 function render(st = state.Home) {
@@ -57,30 +101,30 @@ function addNavEventListeners() {
   );
 }
 
-// get data from an API endpoint
-axios
-  .get("https://jsonplaceholder.typicode.com/posts")
-  // handle the response from the API
-  .then(response => {
-    // for each post in the response Array,
-    response.data.forEach(post => {
-      // add it to state.Blog.posts
-      state.Blog.posts.push(post);
-    });
-    const params = router.lastRouteResolved().params;
-    if (params) {
-      render(state[params.page]);
-    }
-  });
+// // get data from an API endpoint
+// axios
+//   .get("https://jsonplaceholder.typicode.com/posts")
+//   // handle the response from the API
+//   .then(response => {
+//     // for each post in the response Array,
+//     response.data.forEach(post => {
+//       // add it to state.Blog.posts
+//       state.Blog.posts.push(post);
+//     });
+//     const params = router.lastRouteResolved().params;
+//     if (params) {
+//       render(state[params.page]);
+//     }
+//   });
 
-axios
-  .get()
-  .then(response => {
-    state.Home.weather.city = response.name;
-    state.Home.weather.temp = response.main.temp;
-    state.Home.weather.description = response.weather.main;
-  })
-  .catch(err => console.log(err));
+// axios
+//   .get()
+//   .then(response => {
+//     state.Home.weather.city = response.name;
+//     state.Home.weather.temp = response.main.temp;
+//     state.Home.weather.description = response.weather.main;
+//   })
+//   .catch(err => console.log(err));
 
 axios
   .get(`https://api.github.com/users/${jdwhite1919}/repos`, {
@@ -90,141 +134,141 @@ axios
   })
   .then(response => console.log(response.data));
 
-class Calculator {
-  constructor(previousOperandTextElement, currentOperandTextElement) {
-    this.previousOperandTextElement = previousOperandTextElement;
-    this.currentOperandTextElement = currentOperandTextElement;
-    this.clear();
-  }
+// class Calculator {
+//   constructor(previousOperandTextElement, currentOperandTextElement) {
+//     this.previousOperandTextElement = previousOperandTextElement;
+//     this.currentOperandTextElement = currentOperandTextElement;
+//     this.clear();
+//   }
 
-  clear() {
-    this.currentOperand = "";
-    this.previousOperand = "";
-    this.operation = undefined;
-  }
+//   clear() {
+//     this.currentOperand = "";
+//     this.previousOperand = "";
+//     this.operation = undefined;
+//   }
 
-  delete() {
-    this.currentOperand = this.currentOperand.toString().slice(0, -1);
-  }
+//   delete() {
+//     this.currentOperand = this.currentOperand.toString().slice(0, -1);
+//   }
 
-  appendNumber(number) {
-    if (number === "." && this.currentOperand.includes(".")) return;
-    this.currentOperand = this.currentOperand.toString() + number.toString();
-  }
+//   appendNumber(number) {
+//     if (number === "." && this.currentOperand.includes(".")) return;
+//     this.currentOperand = this.currentOperand.toString() + number.toString();
+//   }
 
-  chooseOperation(operation) {
-    if (this.currentOperand === "") return;
-    if (this.previousOperand !== "") {
-      this.compute();
-    }
-    this.operation = operation;
-    this.previousOperand = this.currentOperand;
-    this.currentOperand = "";
-  }
+//   chooseOperation(operation) {
+//     if (this.currentOperand === "") return;
+//     if (this.previousOperand !== "") {
+//       this.compute();
+//     }
+//     this.operation = operation;
+//     this.previousOperand = this.currentOperand;
+//     this.currentOperand = "";
+//   }
 
-  compute() {
-    let computation;
-    const prev = parseFloat(this.previousOperand);
-    const current = parseFloat(this.currentOperand);
-    if (isNaN(prev) || isNaN(current)) return;
-    switch (this.operation) {
-      case "+":
-        computation = prev + current;
-        break;
-      case "-":
-        computation = prev - current;
-        break;
-      case "*":
-        computation = prev * current;
-        break;
-      case "÷":
-        computation = prev / current;
-        break;
-      default:
-        return;
-    }
-    this.currentOperand = computation;
-    this.operation = undefined;
-    this.previousOperand = "";
-  }
+//   compute() {
+//     let computation;
+//     const prev = parseFloat(this.previousOperand);
+//     const current = parseFloat(this.currentOperand);
+//     if (isNaN(prev) || isNaN(current)) return;
+//     switch (this.operation) {
+//       case "+":
+//         computation = prev + current;
+//         break;
+//       case "-":
+//         computation = prev - current;
+//         break;
+//       case "*":
+//         computation = prev * current;
+//         break;
+//       case "÷":
+//         computation = prev / current;
+//         break;
+//       default:
+//         return;
+//     }
+//     this.currentOperand = computation;
+//     this.operation = undefined;
+//     this.previousOperand = "";
+//   }
 
-  getDisplayNumber(number) {
-    const stringNumber = number.toString();
-    const integerDigits = parseFloat(stringNumber.split(".")[0]);
-    const decimalDigits = stringNumber.split(".")[1];
-    let integerDisplay;
-    if (isNaN(integerDigits)) {
-      integerDisplay = "";
-    } else {
-      integerDisplay = integerDigits.toLocaleString("en", {
-        maximumFractionDigits: 0
-      });
-    }
-    if (decimalDigits != null) {
-      return `${integerDisplay}.${decimalDigits}`;
-    } else {
-      return integerDisplay;
-    }
-  }
+//   getDisplayNumber(number) {
+//     const stringNumber = number.toString();
+//     const integerDigits = parseFloat(stringNumber.split(".")[0]);
+//     const decimalDigits = stringNumber.split(".")[1];
+//     let integerDisplay;
+//     if (isNaN(integerDigits)) {
+//       integerDisplay = "";
+//     } else {
+//       integerDisplay = integerDigits.toLocaleString("en", {
+//         maximumFractionDigits: 0
+//       });
+//     }
+//     if (decimalDigits != null) {
+//       return `${integerDisplay}.${decimalDigits}`;
+//     } else {
+//       return integerDisplay;
+//     }
+//   }
 
-  updateDisplay() {
-    this.currentOperandTextElement.innerText = this.getDisplayNumber(
-      this.currentOperand
-    );
-    if (this.operation != null) {
-      this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
-        this.previousOperand
-      )} ${this.operation}`;
-    } else {
-      this.previousOperandTextElement.innerText = "";
-    }
-  }
-}
+//   updateDisplay() {
+//     this.currentOperandTextElement.innerText = this.getDisplayNumber(
+//       this.currentOperand
+//     );
+//     if (this.operation != null) {
+//       this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
+//         this.previousOperand
+//       )} ${this.operation}`;
+//     } else {
+//       this.previousOperandTextElement.innerText = "";
+//     }
+//   }
+// }
 
-const numberButtons = document.querySelectorAll("[data-number]");
-const operationButtons = document.querySelectorAll("[data-operation]");
-const equalsButton = document.querySelector("[data-equals]");
-const deleteButton = document.querySelector("[data-delete]");
-const allClearButton = document.querySelector("[data-all-clear]");
-const previousOperandTextElement = document.querySelector(
-  "[data-previous-operand]"
-);
-const currentOperandTextElement = document.querySelector(
-  "[data-current-operand]"
-);
+// const numberButtons = document.querySelectorAll("[data-number]");
+// const operationButtons = document.querySelectorAll("[data-operation]");
+// const equalsButton = document.querySelector("[data-equals]");
+// const deleteButton = document.querySelector("[data-delete]");
+// const allClearButton = document.querySelector("[data-all-clear]");
+// const previousOperandTextElement = document.querySelector(
+//   "[data-previous-operand]"
+// );
+// const currentOperandTextElement = document.querySelector(
+//   "[data-current-operand]"
+// );
 
-const calculator = new Calculator(
-  previousOperandTextElement,
-  currentOperandTextElement
-);
+// const calculator = new Calculator(
+//   previousOperandTextElement,
+//   currentOperandTextElement
+// );
 
-numberButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    calculator.appendNumber(button.innerText);
-    calculator.updateDisplay();
-  });
-});
+// numberButtons.forEach(button => {
+//   button.addEventListener("click", () => {
+//     calculator.appendNumber(button.innerText);
+//     calculator.updateDisplay();
+//   });
+// });
 
-operationButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    calculator.chooseOperation(button.innerText);
-    calculator.updateDisplay();
-  });
-});
+// operationButtons.forEach(button => {
+//   button.addEventListener("click", () => {
+//     calculator.chooseOperation(button.innerText);
+//     calculator.updateDisplay();
+//   });
+// });
 
-equalsButton.addEventListener("click", button => {
-  calculator.compute();
-  calculator.updateDisplay();
-});
+// equalsButton.addEventListener("click", button => {
+//   calculator.compute();
+//   calculator.updateDisplay();
+// });
 
-allClearButton.addEventListener("click", button => {
-  calculator.clear();
-  calculator.updateDisplay();
-});
+// allClearButton.addEventListener("click", button => {
+//   calculator.clear();
+//   calculator.updateDisplay();
+// });
 
-deleteButton.addEventListener("click", button => {
-  calculator.delete();
-  calculator.updateDisplay();
-});
+// deleteButton.addEventListener("click", button => {
+//   calculator.delete();
+//   calculator.updateDisplay();
+// });
 
 // let github = process.env.GITHUB_TOKEN;

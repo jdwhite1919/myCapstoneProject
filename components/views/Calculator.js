@@ -40,4 +40,14 @@ export default () => `
 </div>
 </div>
 
+<h2>Is It Nice Outside? Go Ahead and Try It Out!</h2>
+<div class="weather-box">
+<div class="weather">
+</div>
+<div class="weather-box-text">
+<p>Go ahead and go outside and take a twenty-minute brisk jog. At the end, take your pulse. Compare this to 60% of your max heart rate. How does it compare?</p>
+</div>
+</div>
+
+
 `;
