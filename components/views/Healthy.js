@@ -25,4 +25,8 @@ export default () => `
   <div class="safe-gyms-article">
   <a href="https://www.dummies.com/health/exercise/weights/weight-lifting-safety-tips/">Safety Guide to Weights</a>
   </div>
+
+  <hr />
+
+  <h2>Don't Make a Diet, Make a Lifestyle</h2>
 `;
