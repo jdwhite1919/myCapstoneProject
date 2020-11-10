@@ -11,7 +11,7 @@ import "./env";
 const apiData = {
   url:
     "https://api.openweathermap.org/data/2.5/weather?q=st%20louis,us&units=imperials&appid=",
-  key: "b00488066ee9a60f4eb190e8651fea2b"
+  key: `${process.env.APP_KEY}`
 };
 
 const { url, key } = apiData;

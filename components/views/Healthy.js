@@ -1,3 +1,5 @@
+import { capitalize } from "lodash";
+
 export default () => `
   <h1>To Gym or Not to Gym</h1>
 
@@ -29,4 +31,14 @@ export default () => `
   <hr />
 
   <h2>Don't Make a Diet, Make a Lifestyle</h2>
+
+  <div class="healthy-box">
+<img src="https://github.com/jdwhite1919/myCapstoneProject/blob/master/images/healthy-food.jpeg?raw=true" alt="healthyfood" title="healthyfood" class="healthyfood" />
+<div class="healthy-text">
+<p>A longstanding myth is exercise is they key to a healthy lifestyle and the main contributor in weight loss. Unfortunately, this is not the case. Most health professionals will agree diet contributes to 80% of your basal metabolic rate. This is just a fancy way of saying fitness and a healthy lifestyle revolve around what you put in your body.</p>
+<br />
+<p>While most people think hitting the gym is hard, what you do in the kitchen is the hardest. But there is good news. Diet fads do not work. Lifestyle changes work. and these lifestyle changes all revolve around a flexible diet for long-term success. We all struggle with consistency in diet, but that is a key indicator that can bring us all together. See what people have to say below!</p>
+</div>
+</div>
+
 `;
